@@ -1,0 +1,10 @@
+# Large model files
+model/pytorch_model.bin
+
+# Python
+__pycache__/
+*.pyc
+
+# System
+.DS_Store
+Thumbs.db
