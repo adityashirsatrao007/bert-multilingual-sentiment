@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software or model, please cite the associated peer-reviewed paper."
+title: "Deep Multilingual Sentiment Analysis using Uncased BERT Representations"
+abstract: "Multilingual sentiment classification using fine-tuned uncased BERT (mBERT) representations, with an evaluation harness and figure-generation pipeline. Peer-reviewed publication at IEEE ICCTWC 2026, indexed in Scopus."
+authors:
+  - family-names: Sangolgi
+    given-names: Vijay A.
+    affiliation: "N K Orchid College of Engineering & Technology, Solapur, Maharashtra, India"
+  - family-names: Shirsatrao
+    given-names: Aditya Vishal
+    orcid: ""
+    affiliation: "N K Orchid College of Engineering & Technology, Solapur, Maharashtra, India"
+  - family-names: Hibare
+    given-names: Viha Vikram
+    affiliation: "N K Orchid College of Engineering & Technology, Solapur, Maharashtra, India"
+keywords:
+  - sentiment analysis
+  - multilingual BERT
+  - natural language processing
+  - deep learning
+  - cross-lingual classification
+date-released: "2026-04-01"
+license: MIT
+preferred-citation:
+  type: conference-paper
+  authors:
+    - family-names: Sangolgi
+      given-names: Vijay A.
+    - family-names: Shirsatrao
+      given-names: Aditya Vishal
+    - family-names: Hibare
+      given-names: Viha Vikram
+  title: "Deep Multilingual Sentiment Analysis using Uncased BERT Representations"
+  booktitle: "2026 International Conference on Computing Theory and Wireless Communications (ICCTWC)"
+  pages: "1-6"
+  year: 2026
+  publisher: IEEE
+  doi: "10.1109/ICCTWC68241.2026.11583557"
