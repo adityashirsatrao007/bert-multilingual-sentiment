@@ -1,1 +1,1 @@
-{"projectId":"{"error":{"code":"bad_request","message":"Invalid request: should NOT have additional property `build`."}}","orgId":"team_b8HZdpfJVQeRW0QhaLkQI7vP"}
+{"projectId":"{"error":{"code":"invalid_framework","message":"The provided framework must match one of the supported options."}}","orgId":"team_b8HZdpfJVQeRW0QhaLkQI7vP"}
