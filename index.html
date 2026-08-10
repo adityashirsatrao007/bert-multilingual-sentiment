@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Official implementation of peer-reviewed IEEE ICCTWC 2026 (Scopus-indexed) paper. Fine-tuned bert-base-multilingual-uncased for 5-class multilingual sentiment classification." />
+  <meta name="theme-color" content="#2563eb" />
+  <title>Multilingual Sentiment Analysis with BERT — IEEE ICCTWC 2026</title>
+  <style>
+    :root { --bg:#0a0a0c; --card:#111118; --blue:#2563eb; --blue2:#1d4ed8; --txt:#e5e7eb; --muted:#9ca3af; --border:#22232a; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; background: var(--bg); color: var(--txt); line-height: 1.6; }
+    header { background: linear-gradient(135deg, #1e293b 0%, #0a0a0c 100%); border-bottom: 1px solid var(--border); padding: 4rem 2rem; text-align: center; }
+    header h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: .5rem; }
+    header p { color: var(--muted); max-width: 720px; margin: 0 auto; }
+    .container { max-width: 1100px; margin: 0 auto; padding: 2rem; }
+    section { background: var(--card); border: 1px solid var(--border); border-radius: 14px; padding: 2rem; margin-bottom: 1.5rem; }
+    section h2 { color: var(--blue); font-size: 1.4rem; margin-bottom: 1rem; border-bottom: 1px solid var(--border); padding-bottom: .5rem; }
+    .badges { display: flex; flex-wrap: wrap; gap: .6rem; margin-bottom: 1.2rem; }
+    .badge { display: inline-flex; align-items: center; gap: .4rem; background: #1e293b; border: 1px solid var(--border); color: var(--txt); padding: .3rem .7rem; border-radius: 8px; font-size: .82rem; }
+    .badge a { color: #93c5fd; text-decoration: none; }
+    figure img { max-width: 100%; border-radius: 10px; border: 1px solid var(--border); }
+    figure figcaption { color: var(--muted); font-size: .82rem; text-align: center; margin-top: .4rem; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+    a.btn { display: inline-block; padding: .6rem 1.2rem; border-radius: 8px; text-decoration: none; font-weight: 600; border: none; margin: .2rem; }
+    a.btn.primary { background: var(--blue); color: #fff; }
+    a.btn.secondary { background: #1e293b; border: 1px solid var(--border); color: var(--txt); }
+    footer { text-align: center; color: var(--muted); padding: 2rem; font-size: .85rem; border-top: 1px solid var(--border); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>BERT Multilingual Sentiment</h1>
+    <p>Deep Multilingual Sentiment Analysis using Uncased BERT Representations — official implementation of our peer-reviewed paper at <strong>IEEE ICCTWC 2026</strong> (Scopus-indexed).</p>
+  </header>
+  <main class="container">
+    <section>
+      <h2>Publication</h2>
+      <div class="badges">
+        <span class="badge"><a href="https://doi.org/10.1109/ICCTWC68241.2026.11583557">DOI: 10.1109/ICCTWC68241.2026.11583557</a></span>
+        <span class="badge">IEEE Xplore · ICCTWC 2026</span>
+        <span class="badge">Scopus Indexed</span>
+        <span class="badge">Python 3.10</span>
+        <span class="badge">License: MIT</span>
+      </div>
+      <blockquote style="color:var(--muted); border-left:3px solid var(--blue); padding-left:1rem; font-style:italic;">
+        V. A. Sangolgi, A. V. Shirsatrao, and V. V. Hibare, "Deep Multilingual Sentiment Analysis using Uncased BERT Representations," in <em>IEEE International Conference on Computational Technologies and Computing Sciences</em>, 2026.
+      </blockquote>
+    </section>
+    <section>
+      <h2>Results</h2>
+      <div class="grid">
+        <figure>
+          <img src="Fig_7_Metrics.png" alt="Metrics across languages" />
+          <figcaption>Figure 1 — Evaluation metrics across languages.</figcaption>
+        </figure>
+        <figure>
+          <img src="Fig_9_Accuracy.png" alt="Accuracy convergence" />
+          <figcaption>Figure 2 — Accuracy convergence over epochs.</figcaption>
+        </figure>
+        <figure>
+          <img src="Fig_11_ROC.png" alt="ROC curves" />
+          <figcaption>Figure 3 — ROC curves (macro-averaged).</figcaption>
+        </figure>
+        <figure>
+          <img src="Fig_12_Test_Performance.png" alt="Test performance" />
+          <figcaption>Figure 4 — Test-set class performance.</figcaption>
+        </figure>
+        <figure>
+          <img src="confusion_matrix.png" alt="Confusion matrix" />
+          <figcaption>Figure 5 — Validation confusion matrix.</figcaption>
+        </figure>
+      </div>
+    </section>
+    <section>
+      <h2>Repository</h2>
+      <p>This is the official implementation of the paper. The codebase fine-tunes
+        <code>bert-base-multilingual-uncased</code> for 5-class multilingual sentiment
+        classification using TensorFlow/Keras, with evaluation, metrics, and reproducible
+        training scripts.</p>
+      <p style="margin-top:1.2rem;">
+        <a class="btn primary" href="https://github.com/adityashirsatrao007/bert-multilingual-sentiment">View on GitHub</a>
+        <a class="btn secondary" href="https://github.com/adityashirsatrao007/bert-multilingual-sentiment/blob/main/PUBLICATION.md">Publication details</a>
+      </p>
+    </section>
+  </main>
+  <footer>
+    &copy; 2026 Aditya Shirsatrao. Research implementation. MIT licensed.
+  </footer>
+</body>
+</html>
